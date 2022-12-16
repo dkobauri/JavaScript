@@ -4,7 +4,7 @@ const secondString = '2 + 3 223 2223';
 
 // Given the string 'ahb acb aeb aeeb adcb axeb'. Write a regular expression that matches the strings ahb, acb, aeb by pattern: letter 'a', any character, letter 'b'
 
-const matching = /b/gi;
+const matching = /[\ba]+[\S][b\b]/g;
 console.log("--Match the string by pattern--");
 console.log(firstString.match(matching));
 
