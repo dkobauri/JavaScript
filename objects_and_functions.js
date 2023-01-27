@@ -37,20 +37,36 @@ terminal();
 
 // Write a function for calculating the type of argument and type output to the console
 
-const calc = arg => console.log(arg);
+const calc = arg => console.log(typeof(arg));
 
 console.log("--Calculate the argument and display output--");
-calc(5 + 6);
+calc();
+calc(3);
+calc("3");
+calc(true);
 
 // Write a function that determines whether a number is prime or not
 
 const prime = num => {
-    for(let i = 2; i < num; i++)
-        if(num % i == 0)
-            return console.log("Number is not prime!"); 
-    return console.log("Number is prime!");
+    if(num > 1) {
+        for(let i = 2; i <= num; i++) {
+            if(num % i == 0) {
+                return console.log("Number is not prime!");
+            } else {
+                return console.log("Number is prime!");                
+            }
+        }
+    } else if (num == 0) {
+        return console.log("Zero is neither prime nor composite!");
+    } else if (num == 1 || num < 0) {
+        return console.log("Number is not prime!");
+    }  
 }
 
 console.log("--Prime numbers--");
+prime(-1);
+prime(0);
+prime(1);
+prime(2);
+prime(6);
 prime(11);
-prime(12);
