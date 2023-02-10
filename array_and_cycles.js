@@ -18,7 +18,7 @@ console.log(stringToArr);
 
 // Given an array of the names of your friends, add the words hello to each element of the array
 
-const arrOfNames = ["Jane", "Nick", "David"]
+const arrOfNames = ["Jane", "Nick", "David"];
 
 const newArrOfNames = arrOfNames.map((currentName) => "Hello " + currentName);
 
@@ -27,12 +27,12 @@ console.log(newArrOfNames);
 
 // Convert numeric array to Boolean
 
-const arrOfNumbers = [1, 2, 3, 4, 5];
+const arrOfNumbers = [1, 2, 3, 4, 0];
 
-let arrToBoolean = Boolean(arrOfNumbers);
+let arrOfBooleans = arrOfNumbers.map((currentNumber) => Boolean(currentNumber));
 
 console.log("--Convert array to boolean--");
-console.log(arrToBoolean);
+console.log(arrOfBooleans);
 
 // Sort the array [1,6,7,8,3,4,5,6] in descending order
 
@@ -47,17 +47,17 @@ console.log(newArrToSort);
 
 const arrToFilter = [1, 6, 7, 8, 3, 4, 5, 6];
 
-let newArrToFilter = arrToFilter.filter(currentValue => currentValue > 3)
+let newArrToFilter = arrToFilter.filter(currentValue => currentValue > 3);
 
 console.log("--Filter array (value > 3)--");
 console.log(newArrToFilter);
 
 // Write a function that takes two parameters - an array and a number and outputs the index of an array element equal to a number
 
-const selector = (array, index) => console.log(array[index]);
+const selector = (array, index) => console.log(array.indexOf(index));
 
 console.log("--Display value in array by index--");
-selector([1, 2, 3], 1)
+selector([1, 2, 3], 1);
 
 // Implement a loop that will print the number 'a' until it is less than 10
 

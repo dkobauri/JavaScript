@@ -8,7 +8,7 @@ const matching = /[\ba]+[\S][b\b]/g;
 console.log("--Match the string by pattern--");
 console.log(firstString.match(matching));
 
-// Given the string '2 + 3 223 2223'. Write a regex that finds line 2 + 3 without capturing the rest
+// Given the string '2 + 3 223 2223'. Finds line 2 + 3 without capturing the rest
 
 const sliced = secondString.slice(0,5);
 console.log("--Slice the string--");

@@ -19,9 +19,9 @@ console.log(z1);
 
 // 2. Perform multiplication of various types (string * boolean, string * number, number * boolean)
 
-let x2 = a * b // string * boolean
-let y2 = a * c // string * number
-let z2 = b * c // number * boolean
+let x2 = a * b; // string * boolean
+let y2 = a * c; // string * number
+let z2 = b * c; // number * boolean
 
 console.log("--Multiplication--");
 console.log(x2);
@@ -30,9 +30,9 @@ console.log(z2);
 
 // 3. Divide different types (string / boolean, string / number, number / Boolean)
 
-let x3 = a / b // string / boolean
-let y3 = a / c // string / number
-let z3 = b / c // number / boolean
+let x3 = a / b; // string / boolean
+let y3 = a / c; // string / number
+let z3 = b / c; // number / boolean
 
 console.log("--Devision--");
 console.log(x3);
