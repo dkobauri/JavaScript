@@ -1,2 +1,2 @@
 # JavaScript
-Tasks For Stage 1
+Simple JavaScript Tasks
